@@ -33,7 +33,6 @@ var AnimateFrameObject = function() {
 			if (elapsed > inifps) {
 
 				then = now - (elapsed % inifps);
-				console.log(inifps);
 				call();
 			
 			}
