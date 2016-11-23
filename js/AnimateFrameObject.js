@@ -8,7 +8,7 @@ var AnimateFrameObject = function() {
 				window.oRequestAnimationFrame      || 
 				window.msRequestAnimationFrame     || 
 				function(/* function */ callback, /* DOMElement */ element){
-					requestAnimFrame(callback);
+					window.setTimeout(callback, 1000/60)
 				};
 	})();
 
